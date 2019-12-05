@@ -1,5 +1,5 @@
 ## Dependencies
-conda create --name <env> --file requirements.txt
+pip install -r requirements.txt
 
 
 ## Dataset
