@@ -1,8 +1,5 @@
-A more detailed explaination and report can be found in [Gender and Race recognition: Transfer, Multi-task Learning for the Laziest](https://medium.com/@zhuyan/gender-and-race-recognition-transfer-multi-task-learning-for-the-laziest-88316e6e492).
-
 ## Dependencies
-(after installing miniconda which comes with essential python packages)
-1. Tensorflow (added path to CUDA toolkit)
+conda create --name <env> --file requirements.txt
 
 
 ## Dataset
@@ -21,39 +18,26 @@ Handle error files from UTKFace:
 mv 39_1_20170116174525125.jpg.chip.jpg 39_0_1_20170116174525125.jpg.chip
 mv 61_1_20170109150557335.jpg.chip.jpg 61_1_3_20170109150557335.jpg.chip
 mv 61_1_20170109142408075.jpg.chip.jpg 61_1_1_20170109142408075.jpg.chip
-```            
+``` 
+Put it UTKFace in the same level of hierarchy of CMPT726
 
 ### Raw
 **gender_labels**   
 0: male, 1: female  
 {'0': 12391, '1': 11317}
 
-**race_labels**  
-White, Black, Asian, Indian, and Others  
-{'0': 10078, '1': 4528, '2': 3434, '3': 3976, '4': 1692}
-
-### Augmentation
-0: no, 1: x2, 2: x3, 3: x3, 4: x4  
-
-- **train genders**  
-Counter({'0': 22188, '1': 21128})    
-- **val gender**  
-Counter({'0': 2473, '1': 2336})  
-- **train races**  
-Counter({'3': 10809, '2': 9270, '0': 9057, '1': 8156, '4': 6024})  
-- **val race**  
-Counter({'3': 1116, '2': 1032, '0': 1021, '1': 896, '4': 744})  
-
 
 ### Scripts
 ```
 make_features.py
 ```
+Create a <data> folder inside CMPT726.
 Functionality: 
 - get images from directory: `UTKFace/*.jpg`
 - split data in to training, validation and test set
 - data augmentation to balance the representation each race in the total population
 - save to `*.tfrecords* files
+
 
 ```
 multitask_model.py
@@ -69,6 +53,14 @@ trainer.py
 
 python trainer.py --project_dir /data/gender_race_face/ --model_name model1_gender_0001 --learning_rate 0.0001 --num_epoch 2
 ```  
+Before running:
+- Create <models> inside <CMPT726> directory
+- download the pretrained [VGGFace2](https://drive.google.com/open?id=1EXPBSXwTaqrSC0OhUdXNmKSh9qJUQ55-) weights
+- create <detectors> folder inside <models> directory
+- create <logs> folder inside <CMPT726> folder
+- create <model_1> and <model_2> inside the <logs> directory
+  
+Functionality
 - set training parameters and log directory
 - train steps
 - log to tensorboard 
@@ -116,23 +108,11 @@ Functionality:
 predictor.py
 ```
 Dependencies:
-1. dlib.
-Install on Windows with instruction from https://github.com/charlielito/install-dlib-python-windows.
-2. cv2
+dlib. Install on Windows with instruction from [dlib](https://github.com/charlielito/install-dlib-python-windows).
 Also, might have to use an older version of python.
 - preprocess: chop and align the face
 - predict use saved model
 
 ## Baseline models 
-### model1_gender
-0.0001 lr   
-INFO:tensorflow:Average gender Accuracy: 0.94431586   
-### model1_race
-INFO:tensorflow:Average gender Accuracy: 0.8644865   
-
-## Best multi-task model
-lower learning rate for all pretrained layer, mid lr for gender layer   
-batch normalization for added fc layers   
-INFO:tensorflow:Average gender Accuracy: 0.951493   
-INFO:tensorflow:Average race Accuracy: 0.87557212   
+This is still under run!
 
