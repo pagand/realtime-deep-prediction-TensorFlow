@@ -54,11 +54,11 @@ trainer.py
 python trainer.py --project_dir /data/gender_race_face/ --model_name model1_gender_0001 --learning_rate 0.0001 --num_epoch 2
 ```  
 Before running:
-- Create '<models>' inside <CMPT726> directory
+- Create 'models' inside 'CMPT726' directory
 - download the pretrained [VGGFace2](https://drive.google.com/open?id=1EXPBSXwTaqrSC0OhUdXNmKSh9qJUQ55-) weights
-- create <detectors> inside <models> directory
-- create <logs> inside <CMPT726> folder
-- create <model_1> and <model_2> inside the <logs> directory
+- create 'detectors' inside 'models' directory
+- create 'logs' inside 'CMPT726' folder
+- create 'model_1' and 'model_2' inside the 'logs' directory
   
 Functionality
 - set training parameters and log directory
