@@ -1,6 +1,6 @@
 ## Dependencies
 
-dlibInstall on Windows with instruction from [dlib](https://github.com/charlielito/install-dlib-python-windows).
+Install dlib with instruction from [dlib](https://github.com/charlielito/install-dlib-python-windows).
 ``` 
 conda create --name <myenv> python=3.5
 conda activate <myenv>
