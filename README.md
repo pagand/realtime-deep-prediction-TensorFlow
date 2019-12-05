@@ -1,7 +1,11 @@
 ## Dependencies
+
+dlibInstall on Windows with instruction from [dlib](https://github.com/charlielito/install-dlib-python-windows).
 ``` 
 conda create --name <myenv> python=3.5
 conda activate <myenv>
+pip install scipy
+pip install opencv-python
 pip install -r requirements.txt
 ``` 
 
@@ -110,8 +114,7 @@ Functionality:
 ```
 predictor.py
 ```
-Dependencies:
-dlib. Install on Windows with instruction from [dlib](https://github.com/charlielito/install-dlib-python-windows).
+Dependencies: dlib
 Also, might have to use an older version of python.
 - preprocess: chop and align the face
 - predict use saved model
