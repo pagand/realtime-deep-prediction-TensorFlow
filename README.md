@@ -1,6 +1,9 @@
 ## Dependencies
+``` 
+conda create --name <myenv> python=3.5
+conda activate <myenv>
 pip install -r requirements.txt
-
+``` 
 
 ## Dataset
 ### UTF faces (aligned and cropped):
