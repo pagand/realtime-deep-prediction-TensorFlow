@@ -56,8 +56,8 @@ python trainer.py --project_dir /data/gender_race_face/ --model_name model1_gend
 Before running:
 - Create <models> inside <CMPT726> directory
 - download the pretrained [VGGFace2](https://drive.google.com/open?id=1EXPBSXwTaqrSC0OhUdXNmKSh9qJUQ55-) weights
-- create <detectors> folder inside <models> directory
-- create <logs> folder inside <CMPT726> folder
+- create <detectors> inside <models> directory
+- create <logs> inside <CMPT726> folder
 - create <model_1> and <model_2> inside the <logs> directory
   
 Functionality
