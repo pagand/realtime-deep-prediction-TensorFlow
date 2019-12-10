@@ -1,7 +1,7 @@
 Note:
 This repository is inspired from the following github pages:
 - [FaceNet](https://github.com/davidsandberg/facenet)
-- [UTKFace](hhttps://susanqq.github.io/UTKFace/) 
+- [UTKFace](https://susanqq.github.io/UTKFace/) 
 - [Race/Gender recognition](https://github.com/zZyan/race_gender_recognition)
 - [Age/Gender Estimate](https://github.com/BoyuanJiang/Age-Gender-Estimate-TF)
 
