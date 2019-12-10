@@ -126,5 +126,5 @@ Also, might have to use an older version of python.
 - predict use saved model
 
 ## Baseline models 
-This is still under run!
-
+Training parameters after 50 epocks: 0.63, 0.38, and 0.15 cross-entropy loss for age, race and gender evaluation, respectively.  
+Validation accuracy with bining: 92, 82, 13% for age, race and gender prediction, respectively.
