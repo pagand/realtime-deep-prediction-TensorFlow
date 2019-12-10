@@ -4,7 +4,6 @@ Install dlib with instruction from [dlib](https://github.com/charlielito/install
 ``` 
 conda create --name <myenv> python=3.5
 conda activate <myenv>
-pip install scipy
 pip install opencv-python
 pip install -r requirements.txt
 ``` 
