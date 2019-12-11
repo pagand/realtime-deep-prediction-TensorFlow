@@ -1,4 +1,4 @@
-Note:
+## Notes:
 This repository is inspired from the following github pages:
 - [FaceNet](https://github.com/davidsandberg/facenet)
 - [UTKFace](https://susanqq.github.io/UTKFace/) 
@@ -14,6 +14,10 @@ conda activate <myenv>
 pip install opencv-python
 pip install -r requirements.txt
 ``` 
+
+## Checkpoints
+- [Race/Gender](https://drive.google.com/drive/folders/1DAjb04wEktKR8lx32DNtma-QnN23Aa3l?usp=sharing)
+- [ARG](https://drive.google.com/drive/folders/1jk3tr4UzCIwPGdGffwc0pWriAmU8yfwo?usp=sharing)
 
 ## Dataset
 ### UTF faces (aligned and cropped):
