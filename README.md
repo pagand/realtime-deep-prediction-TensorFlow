@@ -36,7 +36,7 @@ mv 39_1_20170116174525125.jpg.chip.jpg 39_0_1_20170116174525125.jpg.chip
 mv 61_1_20170109150557335.jpg.chip.jpg 61_1_3_20170109150557335.jpg.chip
 mv 61_1_20170109142408075.jpg.chip.jpg 61_1_1_20170109142408075.jpg.chip
 ``` 
-Put UTKFace folder in the same level of hierarchy of either two version of CMPT726 (namely RGA or Gender-Race)
+Put UTKFace folder in the same level of hierarchy of either two version of CMPT726 (namely RAG or RaceGender)
 
 ### Raw
 **gender_labels**   
