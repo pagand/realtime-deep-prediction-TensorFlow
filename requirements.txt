@@ -24,7 +24,7 @@ mxnet==1.5.1.post0
 networkx==2.4
 numpy==1.17.4
 opencv-contrib-python==4.1.2.30
-opencv-python==4.1.2.30
+opencv-python==4.2.0.32
 pandas==0.25.3
 Pillow==6.2.1
 protobuf==3.11.1
