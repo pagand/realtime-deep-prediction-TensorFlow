@@ -5,6 +5,8 @@ This repository is inspired from the following github pages:
 - [Race/Gender recognition](https://github.com/zZyan/race_gender_recognition)
 - [Age/Gender Estimate](https://github.com/BoyuanJiang/Age-Gender-Estimate-TF)
 
+More information: https://upaspro.com/tesorflow-facenet/
+
 ## Dependencies
 
 Install dlib with instruction from [dlib](https://github.com/charlielito/install-dlib-python-windows).
